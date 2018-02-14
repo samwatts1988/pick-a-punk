@@ -1,9 +1,12 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
+      <router-link :to="{ name: 'home' }">Home</router-link> |
       <router-link :to="{ name: 'brews' }">Brews</router-link> |
-      <router-link to="/brews/1">Brew 1</router-link>
+      <router-link :to="{ name: 'brew', params: { id: '1'} }">Brew 1</router-link> |
+      <router-link :to="{ name: 'picks' }">Picks</router-link> |
+      <router-link :to="{ name: 'random' }">Random</router-link>
+
     </div>
     <router-view/>
   </div>

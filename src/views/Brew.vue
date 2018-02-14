@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div>
     <h1>Brew {{ id }}</h1>
   </div>
 </template>

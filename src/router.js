@@ -3,6 +3,8 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Brews from './views/Brews.vue'
 import Brew from './views/Brew.vue'
+import Random from './views/Random.vue'
+import Picks from './views/Picks.vue'
 
 Vue.use(Router)
 
@@ -22,6 +24,18 @@ export default new Router({
       path: '/brews/:id',
       name: 'brew',
       component: Brew,
+      props: true
+    },
+    {
+      path: '/random',
+      name: 'random',
+      component: Random,
+      props: true
+    },
+    {
+      path: '/picks',
+      name: 'picks',
+      component: Picks,
       props: true
     }
   ]
